@@ -54,6 +54,11 @@ int main(){
 				printf("Resultado : %f\n", multiplicar(a,b));
 				break;
 			case 4:
+				if(b == 0) {
+					printf("Impossivel dividir por 0 !!\n");
+					break;
+				}
+				
 				printf("Resultado : %f\n", dividir(a,b));
 				break;
 			case 5:
@@ -69,3 +74,4 @@ int main(){
 	
 	return 0;
 }
+
